@@ -12,6 +12,15 @@ and drag it onto the list of smiley themes in Tools → Preferences.
 
 ## Building
 
+The grunt task needs the following packages, make sure you have these
+installed on your system:
+
+ - GraphicsMagick
+ - pngquant
+
+If you've got all the dependencies you can install the npm dependencies and
+run grunt:
+
 ```bash
 npm install
 grunt

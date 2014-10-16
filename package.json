@@ -10,6 +10,7 @@
     "grunt-contrib-copy": "^0.7.0",
     "grunt-multiresize": "^0.3.1",
     "grunt-pngmin": "^0.6.1",
+    "htmlentities": "^1.0.0",
     "string.fromcodepoint": "^0.2.1"
   }
 }

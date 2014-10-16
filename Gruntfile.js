@@ -1,6 +1,7 @@
 'use strict'
 
 var grunt = require('grunt');
+var htmlentities = require('htmlentities');
 require('string.fromcodepoint');
 
 function uStr(str) {
@@ -31,7 +32,9 @@ grunt.registerTask('pidgin', 'Generate Emoji One theme file', function() {
 		//alias = alias.concat(e.unicode_alternates.map(uStr));
 		alias.push(e.shortname);
 		alias = alias.concat(e.aliases);
-		alias = alias.concat(e.aliases_ascii);
+		alias = alias.concat(e.aliases_ascii.map(function(x) {
+			return htmlentities.decode(x);
+		}));
 		theme.repl.push(alias);
 	});
 	theme.repl = theme.repl.map(function(x) {
