@@ -16,9 +16,10 @@ grunt.registerTask('pidgin', 'Generate Emoji One theme file', function() {
 	var opts  = this.options({
 		dest: './dist/theme',
 	});
+	var version = grunt.file.readJSON('package.json').version;
 	var emoji = require('emojione/emoji');
 	var theme = {
-		name:   'Emoji One',
+		name:   'Emoji One (' + version + ')',
 		desc:   'Emoji One unicode ported to Pidgin',
 		icon:   '1F40C.png',
 		author: 'Niclas Hoyer',
@@ -37,6 +38,7 @@ grunt.registerTask('pidgin', 'Generate Emoji One theme file', function() {
 		}));
 		theme.repl.push(alias);
 	});
+	theme.repl.reverse();
 	theme.repl = theme.repl.map(function(x) {
 		return x.join('\t');
 	});

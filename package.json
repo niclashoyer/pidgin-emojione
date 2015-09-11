@@ -1,6 +1,6 @@
 {
   "name": "pidgin-emojione",
-  "version": "1.5.0",
+  "version": "1.5.0-1",
   "dependencies": {},
   "devDependencies": {
     "emojione": "^1.5.0",
