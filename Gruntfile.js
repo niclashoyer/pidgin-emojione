@@ -38,7 +38,6 @@ grunt.registerTask('pidgin', 'Generate Emoji One theme file', function() {
 		}));
 		theme.repl.push(alias);
 	});
-	theme.repl.reverse();
 	theme.repl = theme.repl.map(function(x) {
 		return x.join('\t');
 	});
