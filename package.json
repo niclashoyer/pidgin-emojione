@@ -9,7 +9,7 @@
     "grunt-contrib-compress": "^0.14.0",
     "grunt-contrib-copy": "^0.8.1",
     "grunt-multiresize": "^0.3.1",
-    "grunt-pngmin": "^1.0.2",
+    "grunt-pngmin": "^1.2.0",
     "htmlentities": "^1.0.0",
     "string.fromcodepoint": "^0.2.1"
   }
