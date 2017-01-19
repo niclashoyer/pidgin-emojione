@@ -7,7 +7,7 @@
     "grunt": "^1.0.1",
     "grunt-contrib-clean": "^0.7.0",
     "grunt-contrib-compress": "^1.4.0",
-    "grunt-contrib-copy": "^0.8.1",
+    "grunt-contrib-copy": "^1.0.0",
     "grunt-multiresize": "^0.3.1",
     "grunt-pngmin": "^1.2.0",
     "htmlentities": "^1.0.0",
